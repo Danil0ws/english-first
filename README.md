@@ -10,6 +10,32 @@ adapters for every major agent format — so you edit **once** and deploy everyw
 
 ## Quick install
 
+### npx skills (recommended — installs to any agent automatically)
+
+```bash
+# install to all detected agents in current project
+npx skills add Danil0ws/english-first
+
+# install globally (available across all projects)
+npx skills add -g Danil0ws/english-first
+
+# specific agent
+npx skills add Danil0ws/english-first -a claude-code
+npx skills add Danil0ws/english-first -a opencode
+npx skills add Danil0ws/english-first -a codex
+npx skills add Danil0ws/english-first -a cursor
+
+# use without installing (one-shot)
+npx skills use Danil0ws/english-first@english-first --agent claude-code
+
+# pinned version
+npx skills add Danil0ws/english-first@v1.0.0
+```
+
+Requires Node.js ≥ 22.20. Supports 75+ agents. See [skills.sh](https://skills.sh) for the full agent list.
+
+---
+
 ### npx (any machine with Node ≥ 18)
 
 ```bash
