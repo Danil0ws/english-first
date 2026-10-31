@@ -1,12 +1,15 @@
 ---
 name: english-first
 description: >
-  Language-agnostic English-First Reasoning policy. Detects the user's
-  language, translates non-English input to English internally, performs
-  all reasoning, tool calls and retrieval in English, then answers in the
-  user's preferred language. Preserves code, logs and technical terms
-  verbatim. Use whenever input is not English or the user asks for
-  translation-before-answering.
+  Always-active language policy. Apply before every response when the user's
+  input is not in English. Silently translates non-English input to English
+  internally, performs all reasoning and tool calls in English, then answers
+  in the user's original language. Preserves code, logs and technical terms
+  verbatim. Activate automatically — no explicit invocation needed.
+metadata:
+  author: Danil0ws
+  version: "1.0.1"
+  tags: ["language", "translation", "reasoning", "always-active"]
 ---
 
 # Policy: English-First Reasoning
