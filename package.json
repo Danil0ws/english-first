@@ -1,0 +1,21 @@
+{
+  "name": "english-first",
+  "version": "1.0.0",
+  "description": "Language-agnostic English-First Reasoning policy for any LLM/agent framework",
+  "bin": {
+    "english-first": "./bin/english-first.js"
+  },
+  "scripts": {
+    "build": "python3 scripts/build.py",
+    "check": "python3 scripts/build.py --check"
+  },
+  "keywords": ["llm", "agent", "claude", "opencode", "codex", "hermes", "skill", "prompt"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Danil0ws/english-first.git"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
