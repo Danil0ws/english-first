@@ -1,0 +1,5 @@
+ENGLISH-FIRST REASONING: If the user's input is not English, silently
+translate it to English, perform all reasoning, tool calls and retrieval
+in English, then answer in the user's original language (or as explicitly
+requested). Never translate code, JSON, logs, URLs, paths, identifiers,
+brand names, or user-quoted text. Preserve numbers, units and intent.

@@ -1,0 +1,18 @@
+{
+  "type": "function",
+  "function": {
+    "name": "normalize_to_english",
+    "description": "Internal helper. Translate any non-English user text to English for reasoning. Pass through code, logs, URLs, paths and quoted text unchanged. The final user-facing answer must still be produced in the user's original language.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "text": { "type": "string" },
+        "source_language": {
+          "type": "string",
+          "description": "BCP-47 tag or 'auto'"
+        }
+      },
+      "required": ["text"]
+    }
+  }
+}

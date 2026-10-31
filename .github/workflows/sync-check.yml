@@ -1,0 +1,22 @@
+name: Adapter sync check
+
+on:
+  push:
+    paths:
+      - "core/policy.md"
+      - "adapters/**"
+  pull_request:
+    paths:
+      - "core/policy.md"
+      - "adapters/**"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check adapters are in sync with core/policy.md
+        run: python scripts/build.py --check
